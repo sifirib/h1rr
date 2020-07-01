@@ -1,6 +1,13 @@
 from itertools import permutations 
  
-print("h1rr v0.1")
+
+print(""" \n\n              
+      **        **          
+      ******  * **  ****  ****
+      **  **    **  *     *
+      **  **    **  *     *    
+                             h1rr v0.2\n\n\n""")
+
 
 i = ''
 veriler = []
@@ -12,12 +19,12 @@ while i != 'cik':
     print(veriler) 
 veriler.pop()
 
-limit = input("Choose the value of delimeter that will determine how many keys will be used\n(If you do not give a number, it will use all the keys)\n: ")
+limit = input("\nChoose the value of delimeter that will determine how many keys will be used\n(If you do not give a number, it will use all the keys)\n: ")
 if limit == '':
     limit = int(len(veriler))
 limit = int(limit)
 
-filename = input("Enter your file name if you want to create a txt file that includes the wordlist on your desktop\n(If you do not enter a name, it will not create a file that includes the wordlist)\n: ")
+filename = input("\nEnter your file name if you want to create a txt file that includes the wordlist\n(If you do not enter a name, it will not create a file that includes the wordlist)\n: ")
  
 for n in range(1,limit+1):
     perm = permutations(veriler, n) 
